@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    table {
+        width: 100%;
+        border: 1px ;
+        }
+
+        th, td {
+        border: 1px;
+        padding: 8px;
+        text-align: center;
+        }
+
+        th {
+        background-color: lightgray;
+        }
+
+        td {
+        background-color: lightcyan;
+        }
+        .button{
+            background-color: #B3D9D9;
+            padding: 15px 32px;
+        }
+        .button2{
+            background-color: #D8D8EB;
+            padding: 15px 32px;
+        }
+        .button3{
+            background-color: #E1C4C4;
+            padding: 15px 32px;
+        }
+  </style>
+</head>
+<body>
+  <table id="myTable">
+    <tr>
+      <th>Math</th>
+      <th>English</th>
+      <th>Programming</th>
+    </tr>
+    <tr>
+      <td id="id1">90</td>
+      <td>60</td>
+      <td>80</td>
+    </tr>
+    <tr>
+      <td>80</td>
+      <td>86</td>
+      <td>983</td>
+    </tr>
+  </table>
+  <br>
+  <div>
+  <h4>Change The Table Width</h4>
+  <button onclick="setTableWidth(200)">200px</button>
+  <button onclick="setTableWidth(500)">500px</button>
+  <br>
+  </div>
+  <div>
+  <h4>Change The Border and the Spacing Width</h4>
+  <button onclick="setTableBorder(1)">1px</button>
+  <button onclick="setTableBorder(10)">10px</button>
+  <button onclick="setTableBorder(20)">20px</button>
+  </div>
+  <br>
+  <div>
+  <h4>Change The Table Color</h4>
+  <button onclick="setTableBackgroundColor('#B3D9D9')" class="button"></button>
+  <button onclick="setTableBackgroundColor('#D8D8EB')" class="button2"></button>
+  <button onclick="setTableBackgroundColor('#E1C4C4')" class="button3"></button>
+  </div>
+  <br>
+  <button onclick="resetTableStyle()">Reset</button>
+
+  <script src="lab4.js"></script>
+</body>
+</html>
